@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <title>WakaMole Game</title>
+    <script src="wkm.js">
+        //Author: Ethan Thompson
+        //Due: Nov 18 2:00 PM
+        //Description: A javascript wakamole game, 2 timers, events
+    </script>
+</head>
+
+<body class="bg-secondary">
+    <article class="navbar navbar-expand-md justify-content-center ">
+        <h1 class="display-1" id="seconds"></h1>
+    </article>
+    <article class="navbar navbar-expand-md justify-content-center ">
+        <h1 class="display-1"id="hits"></h1>
+    </article>
+    <article class="navbar navbar-expand-md justify-content-center ">
+        <h1 class="display-1" id="miss"></h1>
+    </article>
+    <header class=" d-flex justify-content-center  container-fluid p-l-5 bg">
+        <section class="row-cols-lg-4 d-flex justify-content-center">
+            <img onclick="detect_mole('0')" id="0" src="img/0.jpg">
+            <img onclick="detect_mole('1')" id="1" src="img/0.jpg">
+            <img onclick="detect_mole('2')" id="2" src="img/0.jpg">
+            <img onclick="detect_mole('3')" id="3" src="img/0.jpg">
+        </section><br>
+        <section class="row-cols-lg-4 d-flex justify-content-center">
+            <img onclick="detect_mole('4')" id="4" src="img/0.jpg">
+            <img onclick="detect_mole('5')" id="5" src="img/0.jpg">
+            <img onclick="detect_mole('6')" id="6" src="img/0.jpg">
+            <img onclick="detect_mole('7')" id="7" src="img/0.jpg">
+        </section>
+    </header>
+    <section class="justify-content-center text-center">
+        <br>
+        <h1 class="display-1 text-uppercase">original</h1>
+        <button class="btn-lg text-uppercase button btn btn-success" id="btn" onclick="main()">Click</button>
+    </section><br>
+    <section class="justify-content-center text-center">
+        <h1 class="display-1 text-center text-uppercase">modes</h1>
+    </section>
+    <section class="display-1 justify-content-center text-center">
+        <button class="btn-lg display-1 text-uppercase btn btn-warning" id="hardbtn" onclick="hard_mode()"> Hard</button>
+        <button class="btn-lg display-1 text-uppercase btn btn-danger" id="insanebtn" onclick="insane_mode()"> Insane</button>
+    </section>
+</body>
+
+</html>
